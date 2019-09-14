@@ -1,6 +1,6 @@
 <div class="container">
     <h2>Registration</h2>
-    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <form>
       <div class="form-group">
         <label for="name">FirstName:</label>
         <input type="text" class="form-control" formControlName="firstName" required>
@@ -44,6 +44,6 @@
       </div>
 
 
-      <button type="submit" class="btn btn-default btn-danger" [disabled]="!profileForm.valid">Submit</button>
+      <button type="submit" class="btn btn-default btn-danger">Submit</button>
     </form>
   </div>
