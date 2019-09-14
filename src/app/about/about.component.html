@@ -1,0 +1,17 @@
+<div class="container">
+    <h2 class="text-center">User Details</h2>
+<table border="2" height="500px">
+    <tr>
+        <th class="text-center" width="70px">Id</th>
+        <th class="text-center"width="250px">Name</th>
+        <th class="text-center"width="70px">Age</th>
+        <th class="text-center" width="150px">mobile</th>
+    </tr>
+    <tr *ngFor="let user of Users" class="danger">
+      <td class="text-center">{{user.Id}}</td>
+      <td class="text-center">{{user.Name}}</td>
+      <td class="text-center">{{user.age}}</td>
+      <td class="text-center">{{user.mobile}}</td>
+    </tr>
+</table>
+</div>
